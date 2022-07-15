@@ -21,9 +21,9 @@ const checkWin = ()=>
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won";
             isgameover = true;
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px";
-            boxtext[e[0]].style.backgroundColor='#b79dc5';
-            boxtext[e[1]].style.backgroundColor='#b79dc5';
-            boxtext[e[2]].style.backgroundColor='#b79dc5';
+            boxtext[e[0]].style.backgroundColor='white';
+            boxtext[e[1]].style.backgroundColor='white';
+            boxtext[e[2]].style.backgroundColor='white';
         }
     })
 }
@@ -53,9 +53,9 @@ reset.addEventListener('click', ()=>
     let boxtexts = document.querySelectorAll('.boxtext');
     Array.from(boxtexts).forEach(element => {
         element.innerText = "";
-        element.style.backgroundColor='white';
-        element.style.backgroundColor='white';
-        element.style.backgroundColor='white';
+        element.style.backgroundColor='black';
+        element.style.backgroundColor='black';
+        element.style.backgroundColor='black';
     });
     turn = "X"; 
     isgameover = false
